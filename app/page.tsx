@@ -196,7 +196,13 @@ export default function Home() {
         pdf.addImage(imgData, "JPEG", x, y, finalWidth, finalHeight);
       }
 
-      pdf.save(`图片转换_${paperSize}_${new Date().getTime()}.pdf`);
+      const now = new Date();
+      const dateStr = now.getFullYear() +
+        String(now.getMonth() + 1).padStart(2, '0') +
+        String(now.getDate()).padStart(2, '0');
+      const timeStr = String(now.getHours()).padStart(2, '0') +
+        String(now.getMinutes()).padStart(2, '0');
+      pdf.save(`图片集_${dateStr}-${timeStr}.pdf`);
     } catch (error) {
       console.error("导出PDF失败:", error);
       alert("导出PDF失败，请重试");
