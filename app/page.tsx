@@ -18,7 +18,7 @@ const PAPER_SIZES: Record<PaperSize, PaperConfig> = {
   A5: { width: 148, height: 210, label: "A5 (148×210 毫米)" },
 };
 
-const WHITE_BORDER_MM = 16;
+const WHITE_BORDER_MM = 10;
 
 export default function Home() {
   const [images, setImages] = useState<File[]>([]);
@@ -202,7 +202,7 @@ export default function Home() {
         String(now.getDate()).padStart(2, '0');
       const timeStr = String(now.getHours()).padStart(2, '0') +
         String(now.getMinutes()).padStart(2, '0');
-      pdf.save(`图片集_${dateStr}-${timeStr}.pdf`);
+      pdf.save(`待打印图片集_${dateStr}${timeStr}.pdf`);
     } catch (error) {
       console.error("导出PDF失败:", error);
       alert("导出PDF失败，请重试");
