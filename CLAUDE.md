@@ -63,8 +63,8 @@ const WHITE_BORDER_MM = 16;  // 白边宽度
 
 ## 部署
 
-项目配置为静态导出（`output: "export"`），可直接部署到 Vercel：
+项目使用标准 Next.js 部署，可直接部署到 Vercel：
 
 1. 在 Vercel 中导入此仓库
-2. Vercel 会自动检测 Next.js 并运行 `npm run build`
-3. 静态文件会从 `out/` 目录提供服务
+2. Vercel 会自动检测 Next.js 并部署
+3. 推送到 main 分支会自动触发重新部署

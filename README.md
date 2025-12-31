@@ -56,8 +56,6 @@ npm run dev
 npm run build
 ```
 
-构建完成后，`out` 目录包含静态文件，可直接部署到任何静态托管服务。
-
 ## 技术栈
 
 - **Next.js 15** - React 框架
