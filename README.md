@@ -1,7 +1,5 @@
 # 图片批量处理小工具
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/your-username/print-tool)
-
 一个纯前端的图片批量转 PDF 工具，支持批量将图片转换为 A4、A3、A5 等标准纸张大小的 PDF 文件。所有处理在浏览器本地完成，保护您的隐私。
 
 ## 功能特性
